@@ -1,0 +1,40 @@
+* {
+    background-color: black;
+    opacity: 0.9;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+header {
+    border-bottom: 1px solid white;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 250;
+}
+
+p.main-head {
+    color: white;
+    padding-top: 2.5%;
+    letter-spacing: 0.5px;
+}
+
+p.focused-vs-diffuse {
+    color: white;
+}
