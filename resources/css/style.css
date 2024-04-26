@@ -8,14 +8,16 @@
 }
 
 header {
-    border-bottom: 1px solid white;
+
 }
 
 h1 {
     color: white;
     font-size: 2.5rem;
     font-weight: 400;
-    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 0.5%;
+    text-align: right;
 }
 
 h3 {
@@ -28,7 +30,8 @@ h4 {
     color: white;
     font-size: 1.2rem;
     font-weight: 250;
-    padding-left: 2%;
+    padding-right: 2%;
+    text-align: right;
 }
 
 p.main-head {
@@ -53,3 +56,40 @@ p.focused-vs-diffuse {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #000;
+    overflow: auto;
+    border-bottom: solid 1px white;
+    padding-bottom: 5px;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #e77422;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
