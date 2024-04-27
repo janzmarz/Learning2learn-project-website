@@ -1,5 +1,6 @@
 * {
     background-color: black;
+    color: aliceblue;
     opacity: 0.9;
     font-family: "Oswald", sans-serif;
     font-size: 1rem;
@@ -46,6 +47,17 @@ p.focused-vs-diffuse {
     padding: 1% 5%;
 }
 
+p.chunking {
+  color: white;
+  padding: 1% 5%;
+}
+
+p.testchecklist {
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .images {
 
 }
@@ -55,6 +67,18 @@ p.focused-vs-diffuse {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.chunking {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  padding: 20px 10px;
+}
+
+#images{
+  text-align: center;
 }
 
 /* Style the navigation bar */
@@ -93,3 +117,43 @@ p.focused-vs-diffuse {
       display: block;
     }
   }
+
+  /* This is for the checklist */
+
+  .container {
+  color: #eeeeee;
+	display: flex;
+	flex-direction: column;
+  text-wrap: wrap;
+	min-width: auto;
+  min-height: auto;
+	box-shadow: 3px 3px 10px rgba(360, 360, 360, 0.15);
+	border-top: 5px solid #e77422;
+	border-bottom: 5px solid #e77422;
+  padding: 0px 20px;
+}
+
+.todo {
+  display:inline-flex;
+	padding: 1em;
+  min-height: auto;
+
+}
+
+.todo__value {
+	background: transparent;
+	border: none;
+	outline: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	flex-grow: 1;
+  min-height: auto;
+}
+
+.todo:has(.todo__checkbox:checked) {
+	color: #555555;
+	background: #e77422;
+	text-decoration: line-through;
+	order: 1;
+}
