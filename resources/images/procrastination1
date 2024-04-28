@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head ><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),document.addEventListener("DOMContentLoaded",(()=>{this.p()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}k(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.M(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.O()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.O()}D(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}S(){return new Promise((t=>{this.T?this.O=t:t()}))}C(){this.T=!0}O(){this.T=!1}M(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}p(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.j(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.P(this),this.F(this),this.q(),this.A(),this.I(),await this.U(this.delayedScripts.normal),await this.U(this.delayedScripts.defer),await this.U(this.delayedScripts.async);try{await this.W(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.S().then((()=>{this.D()})),this.N()}A(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(function(){t.setAttribute("data-rocket-status","failed"),e()})),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed"),e()}}));t.setAttribute("data-rocket-status","skipped")}async U(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.U(t)):Promise.resolve()}I(){this.j([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}j(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o){const n=document.createElement("link");n.href=o,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),i.appendChild(n),this.trash.push(n)}})),document.head.appendChild(i)}P(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function n(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(n){t.everythingLoaded?o=n:e["rocket"+i]=o=n}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){if(o&&o.fn&&!t.allJQueries.includes(o)){o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])};const e=o.fn.on;o.fn.on=o.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this},t.allJQueries.push(o)}e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async W(){this.domReadyFired=!0,await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}q(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),n=i.parentElement;let s=t.get(i);void 0===s&&(s=i.nextSibling,t.set(i,s));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),n.insertBefore(c,s)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.k(t)}}RocketLazyLoadScripts.run()})();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v22.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Stop procrastinating now: 17 strategies to get you back in action - The Creative Life</title>
+	<meta name="description" content="We all procrastinate at times. Sometimes we even need to. But here are 17 strategies to stop procrastinating and get back into action." />
+	<link rel="canonical" href="https://thecreativelife.net/stop-procrastinating/" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Stop procrastinating now: 17 strategies to get you back in action - The Creative Life" />
+	<meta property="og:description" content="We all procrastinate at times. Sometimes we even need to. But here are 17 strategies to stop procrastinating and get back into action." />
+	<meta property="og:url" content="https://thecreativelife.net/stop-procrastinating/" />
+	<meta property="og:site_name" content="The Creative Life" />
+	<meta property="article:published_time" content="2022-10-03T10:00:00+00:00" />
+	<meta property="article:modified_time" content="2023-12-17T17:59:59+00:00" />
+	<meta property="og:image" content="https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479.png" />
+	<meta property="og:image:width" content="2000" />
+	<meta property="og:image:height" content="2000" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Sheryl Garratt" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Sheryl Garratt" />
+	<meta name="twitter:label2" content="Estimated reading time" />
+	<meta name="twitter:data2" content="19 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://thecreativelife.net/stop-procrastinating/#article","isPartOf":{"@id":"https://thecreativelife.net/stop-procrastinating/"},"author":{"name":"Sheryl Garratt","@id":"https://thecreativelife.net/#/schema/person/3de3fce14d6fc80f64db3361f4294ce8"},"headline":"Stop procrastinating now: 17 strategies to get you back in action","datePublished":"2022-10-03T10:00:00+00:00","dateModified":"2023-12-17T17:59:59+00:00","mainEntityOfPage":{"@id":"https://thecreativelife.net/stop-procrastinating/"},"wordCount":4075,"commentCount":3,"publisher":{"@id":"https://thecreativelife.net/#organization"},"image":{"@id":"https://thecreativelife.net/stop-procrastinating/#primaryimage"},"thumbnailUrl":"https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479.png","keywords":["procrastination","productivity"],"articleSection":["Creative blocks","Popular posts"],"inLanguage":"en-GB","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://thecreativelife.net/stop-procrastinating/#respond"]}]},{"@type":"WebPage","@id":"https://thecreativelife.net/stop-procrastinating/","url":"https://thecreativelife.net/stop-procrastinating/","name":"Stop procrastinating now: 17 strategies to get you back in action - The Creative Life","isPartOf":{"@id":"https://thecreativelife.net/#website"},"primaryImageOfPage":{"@id":"https://thecreativelife.net/stop-procrastinating/#primaryimage"},"image":{"@id":"https://thecreativelife.net/stop-procrastinating/#primaryimage"},"thumbnailUrl":"https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479.png","datePublished":"2022-10-03T10:00:00+00:00","dateModified":"2023-12-17T17:59:59+00:00","description":"We all procrastinate at times. Sometimes we even need to. But here are 17 strategies to stop procrastinating and get back into action.","breadcrumb":{"@id":"https://thecreativelife.net/stop-procrastinating/#breadcrumb"},"inLanguage":"en-GB","potentialAction":[{"@type":"ReadAction","target":["https://thecreativelife.net/stop-procrastinating/"]}]},{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://thecreativelife.net/stop-procrastinating/#primaryimage","url":"https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479.png","contentUrl":"https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479.png","width":2000,"height":2000,"caption":"End the procrastination cycle. Image by Shutterstock"},{"@type":"BreadcrumbList","@id":"https://thecreativelife.net/stop-procrastinating/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://thecreativelife.net/"},{"@type":"ListItem","position":2,"name":"Stop procrastinating now: 17 strategies to get you back in action"}]},{"@type":"WebSite","@id":"https://thecreativelife.net/#website","url":"https://thecreativelife.net/","name":"The Creative Life","description":"Coaching for creatives","publisher":{"@id":"https://thecreativelife.net/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://thecreativelife.net/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-GB"},{"@type":"Organization","@id":"https://thecreativelife.net/#organization","name":"The Creative Life","url":"https://thecreativelife.net/","logo":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://thecreativelife.net/#/schema/logo/image/","url":"https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo.png","contentUrl":"https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo.png","width":1017,"height":160,"caption":"The Creative Life"},"image":{"@id":"https://thecreativelife.net/#/schema/logo/image/"}},{"@type":"Person","@id":"https://thecreativelife.net/#/schema/person/3de3fce14d6fc80f64db3361f4294ce8","name":"Sheryl Garratt","image":{"@type":"ImageObject","inLanguage":"en-GB","@id":"https://thecreativelife.net/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/7f69d50e2f59c2a95bfa219275bdd850?s=96&d=blank&r=g","contentUrl":"https://secure.gravatar.com/avatar/7f69d50e2f59c2a95bfa219275bdd850?s=96&d=blank&r=g","caption":"Sheryl Garratt"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//static.addtoany.com' />
+
+<link rel="alternate" type="application/rss+xml" title="The Creative Life &raquo; Feed" href="https://thecreativelife.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Creative Life &raquo; Comments Feed" href="https://thecreativelife.net/comments/feed/" />
+<link rel="preload" class="mai-preload" href="https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" class="mai-preload" href="https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" class="mai-preload" href="https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" class="mai-preload" href="" imagesrcset="https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo-300x47.png 300w, https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo-600x94.png 600w, https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo-768x121.png 768w, https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo.png 1017w" imagesizes="(max-width: 1017px) 100vw, 1017px" as="image" />
+<link rel="alternate" type="application/rss+xml" title="The Creative Life &raquo; Stop procrastinating now: 17 strategies to get you back in action Comments Feed" href="https://thecreativelife.net/stop-procrastinating/feed/" />
+<link rel='stylesheet' id='wp-block-library-css' href='https://thecreativelife.net/wp-includes/css/dist/block-library/style.min.css?ver=6.5.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link data-minify="1" rel='stylesheet' id='mailerlite_forms.css-css' href='https://thecreativelife.net/wp-content/cache/min/1/wp-content/plugins/official-mailerlite-sign-up-forms/assets/css/mailerlite_forms.css?ver=1714128237' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='woocommerce-layout-css' href='https://thecreativelife.net/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=1714128237' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='woocommerce-smallscreen-css' href='https://thecreativelife.net/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=1714128237' type='text/css' media='only screen and (max-width: 799px)' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link data-minify="1" rel='stylesheet' id='gateway-css' href='https://thecreativelife.net/wp-content/cache/min/1/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-button/assets/css/gateway.css?ver=1714128237' type='text/css' media='all' />
+<link rel='stylesheet' id='mai-engine-main-css' href='https://thecreativelife.net/wp-content/plugins/mai-engine/assets/css/main.min.css?ver=2.34.1.42020240119' type='text/css' media='all' />
+<link rel='stylesheet' id='mai-engine-header-css' href='https://thecreativelife.net/wp-content/plugins/mai-engine/assets/css/header.min.css?ver=2.34.1.42020240119' type='text/css' media='all' />
+<link rel='stylesheet' id='mai-engine-blocks-css' href='https://thecreativelife.net/wp-content/plugins/mai-engine/assets/css/blocks.min.css?ver=2.34.1.42020240119' type='text/css' media='all' />
+<link rel='stylesheet' id='mai-engine-utilities-css' href='https://thecreativelife.net/wp-content/plugins/mai-engine/assets/css/utilities.min.css?ver=2.34.1.42020240119' type='text/css' media='all' />
+<link rel='stylesheet' id='mai-engine-theme-css' href='https://thecreativelife.net/wp-content/plugins/mai-engine/assets/css/themes/inspire.min.css?ver=2.34.1.42020240119' type='text/css' media='all' />
+<link rel='stylesheet' id='mai-engine-desktop-css' href='https://thecreativelife.net/wp-content/plugins/mai-engine/assets/css/desktop.min.css?ver=2.34.1.42020240119' type='text/css' media='only screen and (min-width:1000px)' />
+<link rel='stylesheet' id='mai-engine-genesis-enews-extended-css' href='https://thecreativelife.net/wp-content/plugins/mai-engine/assets/css/genesis-enews-extended.min.css?ver=2.34.1.42020240119' type='text/css' media='all' />
+<link rel='stylesheet' id='mai-engine-simple-social-icons-css' href='https://thecreativelife.net/wp-content/plugins/mai-engine/assets/css/simple-social-icons.min.css?ver=2.34.1.42020240119' type='text/css' media='all' />
+<link rel='stylesheet' id='mai-engine-woocommerce-global-css' href='https://thecreativelife.net/wp-content/plugins/mai-engine/assets/css/woocommerce-global.min.css?ver=2.34.1.42020240119' type='text/css' media='all' />
+<link rel='stylesheet' id='addtoany-css' href='https://thecreativelife.net/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.16' type='text/css' media='all' />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://thecreativelife.net/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="addtoany-core-js-before">
+/* <![CDATA[ */
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_localize = {
+	Share: "Share",
+	Save: "Save",
+	Subscribe: "Subscribe",
+	Email: "Email",
+	Bookmark: "Bookmark",
+	ShowAll: "Show All",
+	ShowLess: "Show less",
+	FindServices: "Find service(s)",
+	FindAnyServiceToAddTo: "Instantly find any service to add to",
+	PoweredBy: "Powered by",
+	ShareViaEmail: "Share via email",
+	SubscribeViaEmail: "Subscribe via email",
+	BookmarkInYourBrowser: "Bookmark in your browser",
+	BookmarkInstructions: "Press Ctrl+D or \u2318+D to bookmark this page",
+	AddToYourFavorites: "Add to your favourites",
+	SendFromWebOrProgram: "Send from any email address or email program",
+	EmailProgram: "Email program",
+	More: "More&#8230;",
+	ThanksForSharing: "Thanks for sharing!",
+	ThanksForFollowing: "Thanks for following!"
+};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async data-rocket-src="https://static.addtoany.com/menu/page.js" id="addtoany-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" async data-rocket-src="https://thecreativelife.net/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1" id="addtoany-jquery-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.8.2" id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View basket","cart_url":"https:\/\/thecreativelife.net\/basket\/","is_cart":"","cart_redirect_after_add":"yes"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.8.2" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.8.2" id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.8.2" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+<link rel="https://api.w.org/" href="https://thecreativelife.net/wp-json/" /><link rel="alternate" type="application/json" href="https://thecreativelife.net/wp-json/wp/v2/posts/6224" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thecreativelife.net/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.2" />
+<meta name="generator" content="WooCommerce 8.8.2" />
+<link rel='shortlink' href='https://thecreativelife.net/?p=6224' />
+<link rel="alternate" type="application/json+oembed" href="https://thecreativelife.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthecreativelife.net%2Fstop-procrastinating%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://thecreativelife.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthecreativelife.net%2Fstop-procrastinating%2F&#038;format=xml" />
+            <!-- MailerLite Universal -->
+            <script type="rocketlazyloadscript">
+                (function (m, a, i, l, e, r) {
+                    m['MailerLiteObject'] = e;
+
+                    function f() {
+                        var c = {a: arguments, q: []};
+                        var r = this.push(c);
+                        return "number" != typeof r ? r : f.bind(c.q);
+                    }
+
+                    f.q = f.q || [];
+                    m[e] = m[e] || f.bind(f.q);
+                    m[e].q = m[e].q || f.q;
+                    r = a.createElement(i);
+                    var _ = a.getElementsByTagName(i)[0];
+                    r.async = 1;
+                    r.src = l + '?' + (~~(new Date().getTime() / 10000000));
+                    _.parentNode.insertBefore(r, _);
+                })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+                var ml_account = ml('accounts', '1521850', 't8m6v0m0f4', 'load');
+            </script>
+            <!-- End MailerLite Universal -->
+        		<script type="rocketlazyloadscript">
+			( function() {
+				window.onpageshow = function( event ) {
+					// Defined window.wpforms means that a form exists on a page.
+					// If so and back/forward button has been clicked,
+					// force reload a page to prevent the submit button state stuck.
+					if ( typeof window.wpforms !== 'undefined' && event.persisted ) {
+						window.location.reload();
+					}
+				};
+			}() );
+		</script>
+		<meta name="p:domain_verify" content="c5b8baeb81d7d5bea861d13db91f54a6"/>
+
+<!-- Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-NZHH7Z59XQ"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NZHH7Z59XQ');
+</script>
+
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="icon" href="https://thecreativelife.net/wp-content/uploads/2021/03/cropped-Unknown.jpg" sizes="32x32" />
+<link rel="icon" href="https://thecreativelife.net/wp-content/uploads/2021/03/cropped-Unknown.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://thecreativelife.net/wp-content/uploads/2021/03/cropped-Unknown.jpg" />
+<meta name="msapplication-TileImage" content="https://thecreativelife.net/wp-content/uploads/2021/03/cropped-Unknown.jpg" />
+		<style type="text/css" id="wp-custom-css">
+			:root .has-link-color a  {
+	color: #CDD6DA;
+	text-decoration: none;
+}
+
+:root .has-link-color a:hover  {
+	color: white;
+	text-decoration: underline;
+}
+
+:root {
+	--color-black: #231942!important;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wp-block-cover__inner-container{
+	padding-top: 300px;
+}
+
+
+.menu-item-link>span{
+	font-family: Lato; 
+	font-weight: 300;
+	font-size: 16px;
+}
+
+/* .wp-block-group.has-background {
+	background-color: #231942!important;
+} */
+
+.menu-item-link>span:hover{
+	color: #F8E3E9;
+}
+
+#menu-footer{
+	background-color: #231942;
+}
+
+
+.wp-block-group .has-black-background-color .has-background .has-dark-background{
+	background-color: #231942!important;
+}
+
+#mlb2-1406146.ml-form-embedContainer .ml-form-embedWrapper.embedForm{
+	background-color: #231942;
+}
+
+.entry-content li::marker{
+	color: #222222;
+}
+
+.related.products {
+display: none;
+}
+
+.woocommerce-Tabs-panel--description h2 {display: none !important; }
+.product_meta .posted_in {display: none !important; }
+.product_meta .tagged_as {display: none !important; }
+		</style>
+		<style id="mai-inline-styles">.header-stuck,:root{--custom-logo-width:120px;}:root{--breakpoint-xs:400px;--breakpoint-sm:600px;--breakpoint-md:800px;--breakpoint-lg:1000px;--breakpoint-xl:1200px;--title-area-padding-mobile:16px;--header-shrink-offset:85px;--body-font-family:Open Sans;--body-font-weight:400;--body-font-weight-bold:700;--heading-font-family:Playfair Display;--heading-font-weight:900;--heading-font-weight-light:500;--alt-font-family:unset;--alt-font-weight:400;--color-black:#222222;--color-white:#ffffff;--color-header:#231942;--color-background:#ffffff;--color-alt:#f3f2ed;--color-body:#323232;--color-heading:#231942;--color-link:#dc758f;--color-link-light:#e495a9;--color-link-dark:#d24b6d;--color-primary:#dc758f;--color-primary-light:#e495a9;--color-primary-dark:#d24b6d;--color-secondary:#dc758f;--color-secondary-light:#e495a9;--color-secondary-dark:#d24b6d;--color-custom-1:#00414d;--color-custom-2:#231942;--button-color:var(--color-white);--button-secondary-color:var(--color-white);--button-link-url:url('https://thecreativelife.net/wp-content/plugins/mai-icons/icons/svgs/regular/arrow-right.svg');--pagination-next-url:url('https://thecreativelife.net/wp-content/plugins/mai-icons/icons/svgs/regular/arrow-right.svg');--pagination-previous-url:url('https://thecreativelife.net/wp-content/plugins/mai-icons/icons/svgs/regular/arrow-left.svg');--entry-next-url:url('https://thecreativelife.net/wp-content/plugins/mai-icons/icons/svgs/regular/arrow-right.svg');--entry-previous-url:url('https://thecreativelife.net/wp-content/plugins/mai-icons/icons/svgs/regular/arrow-left.svg');--search-url:url('https://thecreativelife.net/wp-content/plugins/mai-icons/icons/svgs/regular/search.svg');}.header-right{--menu-justify-content:flex-end;}.has-black-color{color:var(--color-black) !important;--body-color:var(--color-black);--heading-color:var(--color-black);--caption-color:var(--color-black);--cite-color:var(--color-black);}.has-black-background-color{background-color:var(--color-black) !important;}.has-white-color{color:var(--color-white) !important;--body-color:var(--color-white);--heading-color:var(--color-white);--caption-color:var(--color-white);--cite-color:var(--color-white);}.has-white-background-color{background-color:var(--color-white) !important;}.has-header-color{color:var(--color-header) !important;--body-color:var(--color-header);--heading-color:var(--color-header);--caption-color:var(--color-header);--cite-color:var(--color-header);}.has-header-background-color{background-color:var(--color-header) !important;}.has-background-color{color:var(--color-background) !important;--body-color:var(--color-background);--heading-color:var(--color-background);--caption-color:var(--color-background);--cite-color:var(--color-background);}.has-background-background-color{background-color:var(--color-background) !important;}.has-alt-color{color:var(--color-alt) !important;--body-color:var(--color-alt);--heading-color:var(--color-alt);--caption-color:var(--color-alt);--cite-color:var(--color-alt);}.has-alt-background-color{background-color:var(--color-alt) !important;}.has-body-color{color:var(--color-body) !important;--body-color:var(--color-body);--heading-color:var(--color-body);--caption-color:var(--color-body);--cite-color:var(--color-body);}.has-body-background-color{background-color:var(--color-body) !important;}.has-heading-color{color:var(--color-heading) !important;--body-color:var(--color-heading);--heading-color:var(--color-heading);--caption-color:var(--color-heading);--cite-color:var(--color-heading);}.has-heading-background-color{background-color:var(--color-heading) !important;}.has-links-color{color:var(--color-link) !important;--body-color:var(--color-link);--heading-color:var(--color-link);--caption-color:var(--color-link);--cite-color:var(--color-link);}.has-links-background-color{background-color:var(--color-link) !important;}.has-primary-color{color:var(--color-primary) !important;--body-color:var(--color-primary);--heading-color:var(--color-primary);--caption-color:var(--color-primary);--cite-color:var(--color-primary);}.has-primary-background-color{background-color:var(--color-primary) !important;}.has-secondary-color{color:var(--color-secondary) !important;--body-color:var(--color-secondary);--heading-color:var(--color-secondary);--caption-color:var(--color-secondary);--cite-color:var(--color-secondary);}.has-secondary-background-color{background-color:var(--color-secondary) !important;}.has-custom-1-color{color:var(--color-custom-1) !important;--body-color:var(--color-custom-1);--heading-color:var(--color-custom-1);--caption-color:var(--color-custom-1);--cite-color:var(--color-custom-1);}.has-custom-1-background-color{background-color:var(--color-custom-1) !important;}.has-custom-2-color{color:var(--color-custom-2) !important;--body-color:var(--color-custom-2);--heading-color:var(--color-custom-2);--caption-color:var(--color-custom-2);--cite-color:var(--color-custom-2);}.has-custom-2-background-color{background-color:var(--color-custom-2) !important;}@media (min-width: 1000px){:root{--custom-logo-width:400px;--title-area-padding-desktop:36px;}}/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWxU6F15M.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA88, U+1FA90-1FABD, U+1FABF-1FAC5, U+1FACE-1FADB, U+1FAE0-1FAE8, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWxU6F15M.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA88, U+1FA90-1FABD, U+1FABF-1FAC5, U+1FACE-1FADB, U+1FAE0-1FAE8, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA88, U+1FA90-1FABD, U+1FABF-1FAC5, U+1FACE-1FADB, U+1FAE0-1FAE8, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA88, U+1FA90-1FABD, U+1FABF-1FAC5, U+1FACE-1FADB, U+1FAE0-1FAE8, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWxU6F15M.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA88, U+1FA90-1FABD, U+1FABF-1FAC5, U+1FACE-1FADB, U+1FAE0-1FAE8, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWxU6F15M.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqW106F15M.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA88, U+1FA90-1FABD, U+1FABF-1FAC5, U+1FACE-1FADB, U+1FAE0-1FAE8, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA88, U+1FA90-1FABD, U+1FABF-1FAC5, U+1FACE-1FADB, U+1FAE0-1FAE8, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* math */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOmu1aB.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0330, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2034-2037, U+2057, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2102, U+210A-210E, U+2110-2112, U+2115, U+2119-211D, U+2124, U+2128, U+212C-212D, U+212F-2131, U+2133-2138, U+213C-2140, U+2145-2149, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B6, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTUGmu1aB.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8B1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA88, U+1FA90-1FABD, U+1FABF-1FAC5, U+1FACE-1FADB, U+1FAE0-1FAE8, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/open-sans/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTPYgFE_.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTLYgFE_.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://thecreativelife.net/wp-content/fonts/playfair-display/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-border-style: solid;
+--wpforms-field-border-size: 1px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-border-color-spare: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-field-menu-color: #ffffff;
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-border-style: none;
+--wpforms-button-border-size: 1px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-border-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-page-break-color: #066aab;
+--wpforms-background-image: none;
+--wpforms-background-position: center center;
+--wpforms-background-repeat: no-repeat;
+--wpforms-background-size: cover;
+--wpforms-background-width: 100px;
+--wpforms-background-height: 100px;
+--wpforms-background-color: rgba( 0, 0, 0, 0 );
+--wpforms-background-url: none;
+--wpforms-container-padding: 0px;
+--wpforms-container-border-style: none;
+--wpforms-container-border-width: 1px;
+--wpforms-container-border-color: #000000;
+--wpforms-container-border-radius: 3px;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+--wpforms-container-shadow-size-box-shadow: none;
+
+				}
+			</style></head>
+<body class="post-template-default single single-post postid-6224 single-format-standard wp-custom-logo wp-embed-responsive theme-genesis woocommerce-no-js standard-content genesis-breadcrumbs-hidden has-dark-header has-dark-mobile-menu no-page-header has-logo-left is-single no-sidebar no-js"><script type="rocketlazyloadscript">document.body.classList.replace('no-js','js');</script><div class="site-container" id="top"><ul class="genesis-skip-link"><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to main content</a></li><li><a href="#nav-header-right" class="screen-reader-shortcut"> Skip to header right navigation</a></li><li><a href="#site-footer" class="screen-reader-shortcut"> Skip to site footer</a></li></ul><header class="site-header"><div class="site-header-wrap"><div class="title-area title-area-first"><a href="https://thecreativelife.net/" class="custom-logo-link" rel="home"><img width="1017" height="160" src="https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo.png" class="custom-logo" alt="The Creative Life Logo" loading="eager" sizes="(min-width: 1000px) 400px, 120px" decoding="async" fetchpriority="high" srcset="https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo-300x47.png 300w, https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo-600x94.png 600w, https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo-768x121.png 768w, https://thecreativelife.net/wp-content/uploads/2021/07/thecreativelifelogo.png 1017w" /></a><p class="site-title screen-reader-text">The Creative Life</p><p class="site-description screen-reader-text">Coaching for creatives</p></div><div class="header-section-mobile header-right-mobile"><button class="menu-toggle" aria-expanded="false" aria-pressed="false"><span class="menu-toggle-icon"></span><span class="screen-reader-text">Menu</span></button></div><div class="header-section header-right"><nav class="nav-header nav-header-right" id="nav-header-right" aria-label="Header Right" itemscope itemtype="https://schema.org/SiteNavigationElement"><ul id="menu-header-right" class="menu genesis-nav-menu"><li class="menu-item menu-item-first"><a class="menu-item-link" href="https://thecreativelife.net/"><span >Home</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://thecreativelife.net/about/"><span >About me</span></a></li>
+<li class="menu-item current_page_parent"><a class="menu-item-link" href="https://thecreativelife.net/creative-thinking-blog/"><span >Articles</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://thecreativelife.net/books-by-sheryl-garratt-2/"><span >Books</span></a></li>
+<li class="highlight menu-item menu-item-has-children"><a class="menu-item-link" href="#Work%20with%20me"><span >Work with me</span></a>
+<ul class="sub-menu">
+	<li class="menu-item"><a class="menu-item-link" href="https://thecreativelife.net/work-with-me/coaching-for-creatives/"><span >Coaching for creatives</span></a></li>
+	<li class="menu-item"><a class="menu-item-link" href="https://thecreativelife.net/work-with-me/group-coaching/"><span >Group coaching</span></a></li>
+	<li class="menu-item"><a class="menu-item-link" href="https://thecreativelife.net/work-with-me/media-coaching/"><span >Media coaching</span></a></li>
+	<li class="menu-item"><a class="menu-item-link" href="https://thecreativelife.net/work-with-me/workshops-for-creatives/"><span >Workshops for creatives</span></a></li>
+</ul>
+</li>
+<li class="search menu-item menu-item-last menu-item-icon search-icon-form"><button class="search-toggle" aria-expanded="false" aria-pressed="false"><span class="screen-reader-text">Search</span><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" class="search-toggle-icon" width="16" height="16"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512" class="search-toggle-close" width="16" height="16"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"></path></svg></button><form class="search-form" method="get" action="https://thecreativelife.net/" role="search"><label class="search-form-label screen-reader-text" for="searchform-1">Search site</label><input class="search-form-input" type="search" name="s" id="searchform-1" placeholder="Search..." required><button class="search-form-submit button-secondary" type="submit" value="Search"><span class="screen-reader-text">Submit search</span><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" class="search-form-submit-icon" width="24" height="24"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg></button><meta content="https://thecreativelife.net/?s={s}"></form></li>
+</ul></nav></div></div></header><span class="header-spacer"></span><div class="site-inner"><div class="content-sidebar-wrap"><main class="content has-standard-content" id="genesis-content"><article class="entry entry-single no-entry-link has-image type-post category-creative-blocks category-popular tag-procrastination tag-productivity" aria-label="Stop procrastinating now: 17 strategies to get you back in action"><div class="entry-wrap entry-wrap-single"><h1 class="entry-title entry-title-single">Stop procrastinating now: 17 strategies to get you back in action</h1>
+<div class="entry-excerpt entry-excerpt-single"><p>We all procrastinate at times. Here&#8217;s how to get unstuck and moving again.</p>
+</div><div class="entry-meta entry-meta-before-content"><span class="entry-author">by <a href="https://thecreativelife.net/author/sherylg1mac-com/" class="entry-author-link" rel="author"><span class="entry-author-name">Sheryl Garratt</span></a></span></div><div class="entry-content entry-content-single">
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="1024" src="https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-1024x1024.png" alt="Stop procrastinating. Now." class="wp-image-3053" srcset="https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-75x75.png 75w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-80x80.png 80w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-100x100.png 100w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-150x150.png 150w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-300x300.png 300w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-400x400.png 400w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-600x600.png 600w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-768x768.png 768w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-800x800.png 800w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-1024x1024.png 1024w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-1200x1200.png 1200w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479-1536x1536.png 1536w, https://thecreativelife.net/wp-content/uploads/2020/01/shutterstock_601623479.png 2000w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h3 class="wp-block-heading">I have important things to do. </h3>
+
+
+
+<p>There’s a tricky email to write. An unpleasant call to make. And I have a book chapter to edit. </p>
+
+
+
+<p>So obviously, I’ve been arguing with strangers on Twitter. I’ve rearranged some books into alphabetical order, and I’ve cleaned out the fridge. And now I’m playing a game on my phone.</p>
+
+
+
+<p>I tell myself that I really will get going in an hour/after lunch/after dinner. Or that I’ll make a fresh start tomorrow. But when I go deep down the procrastination hole, I stop trusting myself. </p>
+
+
+
+<p>That’s probably the worst thing about the procrastination cycle: no one likes a liar. But there’s nowhere to hide when it’s you who&#8217;s doing the lying. To yourself.</p>
+
+
+
+<p>Avoiding doing the things you need to do is draining. When hours of inaction and distraction stretch into days, weeks, evens months, the self-loathing builds. It&#8217;s time to stop procrastinating. <em>Now.</em> </p>
+
+
+
+<h3 class="wp-block-heading">So how do you stop procrastinating? </h3>
+
+
+
+<p>First, find out <a href="https://thecreativelife.net/why-we-procrastinate/">why we procrastinate</a>. It&#8217;s all about avoiding uncomfortable feelings. Often fear. Fear of failing. Of not being good enough. Fear of upsetting others. It can feel safer to avoid confrontation, change, or just that uneasy feeling of being outside our comfort zone. </p>
+
+
+
+<p>Or it&#8217;s overwhelm. When you don&#8217;t know what project to start now, or what your next step should be. When you have so much on your plate that you can&#8217;t see what to prioritise. Or when the tasks on your list feel so big and unwieldy that you simply don&#8217;t know how or where to start. </p>
+
+
+
+<h3 class="wp-block-heading">Procrastination can become a habit. </h3>
+
+
+
+<p>When you feel the fear and discomfort, you immediately escape into distractions. You want to write an article, but instead you bake a cake — or eat one. You need do something difficult, so you avoid it by going shopping, or sorting emails. You&#8217;re bus<em>y. But you&#8217;re doing nothing you really </em>want <em>to do.</em></p>
+
+
+
+<p>If this is you, here are 17 strategies that have worked, for me and for my coaching clients, to break the procrastination cycle. We&#8217;re all different, and the things we&#8217;re avoiding are different too. So read these, see what resonates, and experiment to find what works for you. </p>
+
+
+
+<h3 class="wp-block-heading">1. Try time-travelling</h3>
+
+
+
+<p>Start by thinking about&nbsp;<em>why</em>&nbsp;you want to do whatever it is you’re putting off. Why it’s important. (And if you can’t think of a reason, skip to number 17 on this list.)</p>
+
+
+
+<p>Then take a few deep breaths, relax and imagine the future. You’ve done the task. It&#8217;s complete. Off your plate. How does that feel? What difference will it make to you and the people you care about? Really connect with how you are&nbsp;<em>feeling</em>&nbsp;now that it’s done, the emotions. Are you happy? Relieved? Satisfied? Proud?</p>
+
+
+
+<p>It can be scary, starting new work. Making changes can be uncomfortable. And of course if we take risks, there’s always a chance we could fail. No wonder it feels easier to do nothing at all.</p>
+
+
+
+<p>But there’s something we should fear even more than failing or making a fool of ourselves. We rarely consider what will happen if we&nbsp;<em>don’t</em>&nbsp;do the thing we want to do. What will the consequences be five, ten, 20 years down the line if we don’t start exercising and eating better? Or if we never start writing that novel we&#8217;ve been thinking about, or practicing the piano and writing those songs? </p>
+
+
+
+<h6 class="wp-block-heading"><strong>Two questions every procrastinator should ask:</strong></h6>
+
+
+
+<ul>
+<li>What’s the worst that could happen if I do this thing? </li>
+
+
+
+<li>And what’s the worst that could happen if I&nbsp;<em>don’t</em> do it?&nbsp;&nbsp;</li>
+</ul>
+
+
+
+<p>If it’s a big thing you’re procrastinating on, travel way into the future. You’re old now, and looking back on your life. How you will feel if you never made that art, launched that business, tried that idea, took that risk? What would you regret more: trying and failing, or never trying at all? Do you&nbsp;<em>really</em>&nbsp;want a life only half-lived?</p>
+
+
+
+<h3 class="wp-block-heading">2. Are you delaying for a reason?</h3>
+
+
+
+<p>Sometimes, we actually&nbsp;<em>need</em>&nbsp;a pause, to help us hear that quiet, calm voice deep within us, warning that something is off. Perhaps your instincts are telling you that the email you&#8217;re about to send will cause more problems than it solves. Or you don’t want to publish that blog post because it isn’t quite right, yet.&nbsp;</p>
+
+
+
+<p>Sometimes you&#8217;re simply procrastinating because you&#8217;ve been pushing too hard, and you need to rest and recharge.&nbsp;If you suspect this is the case, take some time out, without guilt. Go for a walk. Tidy up your workspace. Do something different for an hour. Preferably something that you enjoy, that replenishes your energy or clears your mind. </p>
+
+
+
+<p>Now go back to the task at hand. You might see that you were right to procrastinate. And that you can now see what you need to do to finish it properly. </p>
+
+
+
+
+
+<h3 class="wp-block-heading">3. Write down your excuses</h3>
+
+
+
+<p>I’m a coach, helping creatives of all kinds get over their blocks and make the work they want to make. A while back, I worked with an artist who had endless reasons for not painting.</p>
+
+
+
+<p>His wife wasn’t supportive. He didn’t have a studio. His parents hadn’t encouraged him as a child. He was too tired from his day-job. It was too late to launch a career, when so many of his peers from art school were already successful. There were no galleries where he lived. The light was wrong this time of year. He didn’t have any friends who were creative. His paintbrushes were old. He didn’t feel inspired.</p>
+
+
+
+<p>He wrote them all down, and read them out to me, one after the other. Before he was half-way through his list, we were both laughing. Not all of these things were <em>totally</em> true. And none were insurmountable. We went through the challenges one by one, looking for solutions.&nbsp;Until he realised what was really going on: <em>he was afraid.</em> </p>
+
+
+
+<p>If he didn’t do the work, he could persuade himself he was a thwarted, misunderstood genius. If he <em>did</em> paint, perhaps his work wouldn’t be as good as he hoped it would be.&nbsp;But once he&#8217;d realised this, it was at least easier to begin.</p>
+
+
+
+<p>What are your excuses? And can you see solutions to the obstacles in your way? Or the fears hidden underneath them?</p>
+
+
+
+<h3 class="wp-block-heading">4. Do it badly</h3>
+
+
+
+<p>Perfectionism is the enemy of all creative work. And sometimes, all we need to get going is permission to do it badly. So make some bad art. Write the worst song ever. Tell a terrible story. Go on the shortest run possible.&nbsp;Create a really <a href="https://thecreativelife.net/why-you-need-a-shitty-first-draft/">Shitty First Draft</a>. Listen to the advice of Ernest Hemingway, who declared that &#8220;The first draft of anything is shit.&#8221;</p>
+
+
+
+<p>The painter — the one with with all the excuses — set himself the goal of making ten terrible new works. Paintings he would show to no one. Work that was laughably bad. As a result, he started having fun with his art again. And once he remembered how to play, the inspiration came.</p>
+
+
+
+<p>“I really don’t know if I’ll ever reach the level I want,” he said in our last chat together. “But I’m enjoying trying far more than I was enjoying <em>avoiding</em> trying.”</p>
+
+
+
+<h3 class="wp-block-heading">5. Set micro-goals</h3>
+
+
+
+<p>When you’re stuck fast, when pushing and pulling isn’t working, sometimes what you need to do is just rock gently. To start with some kind of motion, even if it’s tiny. And build from there.&nbsp;</p>
+
+
+
+<p>If you haven’t exercised for years, you&#8217;re not going to run a marathon on day one. And if you overdo it, you&#8217;re likely to get injured or give up. But a three-minute walk, every morning? That will get you into the habit of moving, and also into the habit of doing what you’ve committed to do.&nbsp;</p>
+
+
+
+<p>Set a tiny goal, one that’s so easy to do it&#8217;s a joke. Then schedule it, so it&#8217;s on your calendar/in your mind. Some days that&#8217;s all you’ll do, and that’s fine. But other days, you’ll find you sit down to write 100 words and write 2000. You&#8217;ll go out to take just one photograph and come back with an idea for a new personal project you&#8217;d like to pursue in depth. Or you&#8217;ll set out for a three-minute walk and carry on for an hour.</p>
+
+
+
+<p>Once you’ve done the bare minimum, stop if you want to. And give yourself a reward of some sort. It doesn’t have to be anything huge. Make a cup of tea. Listen to an inspiring podcast.&nbsp;&nbsp;Dance around the room to a track you love.&nbsp;Something to celebrate the fact that you&#8217;ve done what you told yourself to do, without procrastination.</p>
+
+
+
+<h3 class="wp-block-heading">6. Take baby steps</h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" src="https://thecreativelife.net/wp-content/uploads/2020/01/andre-mohamed-F8fxKKWgYPw-unsplash-1024x681.jpg" alt="Stop procrastinating. Now, with baby steps" class="wp-image-3160"/><figcaption class="wp-element-caption">Stop procrastinating by starting small. Photo by Andre Mohamed on Unsplash<br></figcaption></figure></div>
+
+
+<p>How do you eat an elephant?<strong> </strong>One bite at a time! It’s all about breaking a job down into small, manageable chunks. And always knowing what the next step is. It&#8217;s daunting to write a book. To declutter the whole house. Or lose 20 pounds. </p>
+
+
+
+<p>Goals like this can seem overwhelming. We don’t know where to begin, so we don’t begin at all.&nbsp;They&#8217;re not tied to specific actions we can do now. You can&#8217;t write a book in a day. You won&#8217;t get rid of years of accumulated clutter overnight. And you certainly won&#8217;t lose a large amount of weight in the next 24 hours. </p>
+
+
+
+<p>Start with just one step.  Something you <em>can</em> do now. Write a paragraph. Clear a shelf. Replace one unhealthy snack with something better. Do this every day, and you’ll quickly build momentum. Every day, you’ll be one baby step closer to your goal. And you&#8217;ll always know what your next small step should be.</p>
+
+
+
+<p>Once you&#8217;ve broken your task into smaller steps, create deadlines and targets. When you’re trying to complete a big project, it helps to enjoy the journey. So set milestones, and celebrate when you reach each one. Then you can see what you’ve already achieved, rather than constantly feeling overwhelmed by what is left to do.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">7. Track it</h3>
+
+
+
+<p>One of the best ways to change any behaviour is to keep a record of it. Track your time, your minutes spent meditating, exercising, creating, marketing, the number of ideas you&#8217;ve pitched—or whatever else it is that you’re procrastinating on.&nbsp;</p>
+
+
+
+<p>There is a wide choice of apps now—Streaks, StickK, Habitica, Momentum Habit Tracker to name just a few—that help you track new habits. There’s something gloriously addictive and satisfying about ticking it off and watching your count rise. Or you can simply monitor your behaviour in a notebook.&nbsp;Just knowing you&#8217;re recording a behaviour can be all you need to change it. </p>
+
+
+
+<p>Jerry Seinfeld famously marked a cross on a wall calendar every day he did some writing. After a while, he explained, you simply don’t want to break that satisfying chain of crosses. So you do the work, no matter what.&nbsp;</p>
+
+
+
+<p>A journal can help too, in which you regularly review the quality of whatever you are doing, and the results. If you track it, you start to notice your rhythms and cycles, and work better with them. You become more aware of the progress you’re making, what works for you and what doesn’t. For me, just a simple <a href="https://thecreativelife.net/the-power-of-the-weekly-check-in/">weekly check-in</a> has been transformational. </p>
+
+
+
+<p>It’s all about making constant tiny improvements and course adjustments. But over time, the difference can be huge.</p>
+
+
+
+<h3 class="wp-block-heading">8. Start before you’re ready</h3>
+
+
+
+<p>We often feel we should wait until all of the conditions are perfect, before we begin a new project. We want to clear the decks before beginning. There are tools or equipment we might need, or knowledge and skills. We wait to have a perfect room or studio in which to work, or long stretches of uninterrupted time. </p>
+
+
+
+<p>But life tends to get in the way of the best-laid plans. The conditions are <em>never</em> perfect. And the minute you empty your in-box or clear the decks in other ways, it starts filling up again. So if there’s something you want to do, something you want to make or achieve, don&#8217;t wait. Make time. <a href="https://thecreativelife.net/the-productivity-trap/">Pay yourself first</a>.</p>
+
+
+
+<p>Do it in your lunch break. Get up an 30 minutes earlier. Or do it late at night, or at weekends. See if you can get a few minutes in while your children are napping. </p>
+
+
+
+<p>Make a workspace wherever you can find it. Learn as you go. Borrow the tools or equipment, if there&#8217;s stuff you need. Improvise. Make mistakes. <em>Make a start.</em> <a href="https://thecreativelife.net/start-before-youre-ready/">Even if you don&#8217;t feel ready</a>. Once you&#8217;ve begun, you&#8217;ll find a way. And you might find that you didn&#8217;t need a lot of the things you thought you needed, after all. </p>
+
+
+
+<h3 class="wp-block-heading">9. Sweat the small stuff</h3>
+
+
+
+<p>Make a list of all the niggling jobs that are on your mind. Chores. Repairs. Clutter. Bills. Whatever.&nbsp;</p>
+
+
+
+<p>Every day, <a href="https://thecreativelife.net/you-can-do-anything-for-15-minutes/">set a timer</a> for 10-15 minutes, and just get on with crossing them off, one by one. Clean those shoes. Sew that button back on. Put away those clothes. Throw out all the out-of-date nasties lurking at the back of your fridge and cupboards. Repair or replace broken things. Wipe away that stain that snags your attention every time you walk past it at home. Reply to that email. Deal with that pile of paperwork. </p>
+
+
+
+<p>You’ll be surprised how many niggling tasks can be finished in just a few minutes a day.&nbsp;And how much bandwidth they were taking up. What you’re doing here is clearing headspace for the work you really want to do. You’re also gaining momentum, getting into the habit of finishing. </p>
+
+
+
+<p>When you sweat the small stuff, the bigger stuff doesn’t feel so overwhelming.&nbsp;Just make sure you don&#8217;t let the small stuff distract you completely from what you <em>really</em> want to achieve. </p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+                <div class="ml-form-embed"
+                     data-account="1521850:t8m6v0m0f4"
+                     data-form="5336399:i1j1k2">
+                </div>
+            
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">10. Take the pressure off</h3>
+
+
+
+<p>Sometimes when the stakes feel too high, we freeze. We&#8217;ve all seen animals play dead: it&#8217;s an alternative to the flight or fight responses to danger. </p>
+
+
+
+<p>It can help to take the pressure off, to lower the stakes. You&#8217;re not trying to record the album that will make or break your career. Today, you&#8217;re just trying to write one song. </p>
+
+
+
+<p>An author friend was completely blocked. Her last thriller hadn’t sold as well as previous books, and now she couldn’t write the next one. She’d get an idea, work on it for a month or so, then abandon it because the characters were wooden, or the plot didn’t make sense. </p>
+
+
+
+<p>She was painfully aware that her savings were dwindling fast. The longer this went on, the more she needed the next book to be a big hit. The stakes were getting higher by the week. Which made it even harder to start.</p>
+
+
+
+<p>Eventually, she got a part-time job in a bar. The pay wasn’t brilliant, but it helped with the bills. And it took away the immediate pressure. Instead of sitting at her laptop, beating herself up for not writing, she watched films, went to art shows, walked around her city and did a lot of people-watching. </p>
+
+
+
+<p>Within weeks she was writing again, and feeling more resilient when the plot twists weren’t clear or the characters didn’t immediately spring to life. Instead of giving up, she worked on them until they did. </p>
+
+
+
+<p>But even after her next book was delivered, she kept the bar job. It helped her build a financial cushion so didn&#8217;t feel as pressured to make her writing pay. But it also inspired her. “It freed me up to think, and I liked being round people a few nights a week. Besides, I got so much dialogue from conversations I overheard there!”</p>
+
+
+
+<h3 class="wp-block-heading">11. Get accountability</h3>
+
+
+
+<p>Go public about your intentions. Make an announcement on social media. <a href="https://thecreativelife.net/work-with-me-2/coaching-for-creatives-2/">Hire a coach</a>. Ask a friend to check in, and keep you on track. Or better still, ask them to be your buddy and do it with you. Or join a group dedicated to whatever it is you want to do, whether it’s an exercise class, or a writing group. </p>
+
+
+
+<p>Even if we break our promises to ourselves, we don’t like doing it to others. Sometimes all we need is a little peer pressure—and support.</p>
+
+
+
+<p>If you respond more to the stick than the carrot, build in some kind of jeopardy. Write a cheque to an organisation you loathe, put it in a stamped, addressed envelope and give it to a friend. Ask them to promise to post it if you don’t reach your goal by a certain date. (There are also apps that will do this for you.) </p>
+
+
+
+<p>Increasing the cost or consequences of not doing what you want to do can sometimes give you the impetus you need.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">12. Get help!</h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="683" src="https://thecreativelife.net/wp-content/uploads/2020/01/neil-thomas-SIU1Glk6v5k-unsplash-1024x683.jpg" alt="End procrastination by getting help" class="wp-image-3169" srcset="https://thecreativelife.net/wp-content/uploads/2020/01/neil-thomas-SIU1Glk6v5k-unsplash-300x200.jpg 300w, https://thecreativelife.net/wp-content/uploads/2020/01/neil-thomas-SIU1Glk6v5k-unsplash-768x512.jpg 768w, https://thecreativelife.net/wp-content/uploads/2020/01/neil-thomas-SIU1Glk6v5k-unsplash-1024x683.jpg 1024w, https://thecreativelife.net/wp-content/uploads/2020/01/neil-thomas-SIU1Glk6v5k-unsplash-1536x1024.jpg 1536w, https://thecreativelife.net/wp-content/uploads/2020/01/neil-thomas-SIU1Glk6v5k-unsplash-2048x1365.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Stop procrastinating by getting more support. Pic Neil Thomas on Unsplash</figcaption></figure></div>
+
+
+<p>Consider other ways of getting the job done. Can you delegate it, or ask for help? As a journalist, I&nbsp;always procrastinated on transcribing interviews. I&nbsp;<em>hated</em>&nbsp;it, and would do pretty much anything to delay starting. If I called for an afternoon chat or my house was unusually tidy, my friends knew I had a long interview to transcribe.</p>
+
+
+
+<p>The consequence? I’d end up working late into the night close to the deadline. It only took me 20 years to realise that I didn’t&nbsp;<em>have&nbsp;</em>to do it at all. (What can I say? I’m a slow learner.) Instead, I paid a Virtual Assistant to do it for me.&nbsp;</p>
+
+
+
+<p>It changed <em>everything.</em> I’d do an interview in New York or LA, send the digital recording to my VA, and by the time I was back in the UK and over my jet-lag, the transcript would be ready. Sure, I was giving up a portion of my fee. But work no longer felt so hard.&nbsp;And without days lost to procrastination, I was able to take on much more work. </p>
+
+
+
+<p>More recently, I found someone to do the frustrating fiddly bits on my website, freeing me to do the stuff I’m actually good at. Which is not spending hours combing the Internet trying to find guides to doing simple tasks that my tech VA can do in minutes.&nbsp;</p>
+
+
+
+<p>If you are regularly procrastinating on a task you hate, there’s probably someone who will do it better than you. They might even&nbsp;<em>enjoy</em>&nbsp;it. Whether it’s your accounts, your marketing or your ironing, look for someone to take it on. Then you can get on with the work you love – or that you alone can do.  </p>
+
+
+
+<p>If you can&#8217;t afford that yet, <a href="https://thecreativelife.net/eating-the-frog/">eat the frog</a>, and do the hardest task first. The rest of your day will go better if you get the thing you&#8217;re dreading out of the way. </p>
+
+
+
+<h3 class="wp-block-heading">13. Set rules</h3>
+
+
+
+<p>Author Neil Gaiman has a rule to help him writing. When he sits down to work, he has two choices. He can stare out of the window, or he can write. No web surfing, or chatting. No reading, playing with his son, or any other displacement activity. After a while, he explains, writing is usually just more interesting than doing nothing, so he’ll start work.&nbsp;</p>
+
+
+
+<p>I finally started meditating every day due to one simple tweak in my morning routine. I leave my iPad by my meditation cushion at night, and I don&#8217;t allow myself to use it for anything else in the morning until I’ve used the meditation app. </p>
+
+
+
+<p>Set rules to help you do whatever it is you want to be doing. Restrict your choices. Stack the new behaviour you want in with activities that are already ingrained habits, and soon you&#8217;ll be doing it on auto-pilot. </p>
+
+
+
+<p>Two books that can help with breaking unhelpful habits or starting new habits: James Clear&#8217;s excellent <a href="https://amzn.to/3Ca5pNg"><em>Atomic Habits</em>,</a> and <em><a href="https://amzn.to/3V8ho6C">Tiny Habits</a></em> by BJ Fogg. </p>
+
+
+
+<h3 class="wp-block-heading">14. Read <em>Keep Going</em>, or <em>The War Of Art</em></h3>
+
+
+
+<p>If you’re procrastinating about any kind of creative work, these books might help. In <em><a href="https://amzn.to/3Cp8Q3Q">The War of Art</a></em>, author and screenwriter Steven Pressfield talks about the forces of resistance that all creatives face.&nbsp; This resistance, he says, never goes away. But every day, we get to choose. We can give into it, and procrastinate endlessly. Or we can fight it, and make the work we want to make. </p>
+
+
+
+<p><a href="https://austinkleon.com">Austin Kleon</a>&#8216;s book <a href="https://thecreativelife.net/keep-going-sustaining-a-creative-practice/"><em>Keep Going</em> </a>is kinder, gentler in its approach, urging you to build routines that support you and learn to play as well as work. </p>
+
+
+
+<p>Whenever I&#8217;m putting off writing and feel the wet, grey fog of procrastination taking hold, I&#8217;ll pull one of these two books off the shelf, and open a random page. I&#8217;ll often find exactly what I need to get back into action again. &nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">15. Forgive yourself</h3>
+
+
+
+<p>If you’ve been procrastinating for a while, you’re going to feel bad about it. You’re probably beating yourself up, comparing your output with others, and angry that you’ve wasted so much time.&nbsp;</p>
+
+
+
+<p>Draw a line under this, now. Move on. You can’t change the past, but you can make new choices that will change your future. So forgive yourself. And then begin.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">16. Change your environment</h3>
+
+
+
+<p>If you sit down at your computer to write, and 30 minutes later find yourself watching cat videos or TED talks with no idea how you got there, try going to a coffee shop to work (and don&#8217;t get the wi-fi password). Write by hand for a while, and see it it flows better. Switch off your phone. Or turn off your router.&nbsp;</p>
+
+
+
+<p>If you want to go out for a run first thing in the morning, lay out your exercise gear the night before, put your water bottle and anything else you need by the door and make it as easy as possible to just get up and go.&nbsp;</p>
+
+
+
+<p>If you want to lose weight, prepare healthy snacks in advance, so there’s always something handy when you’re hungry. But also empty the fridge and cupboards of temptation.&nbsp;</p>
+
+
+
+<p>Remove distractions. Place what you need in easy reach. Change the cues. Make it as easy as possible to do the thing you want to do.&nbsp;</p>
+
+
+
+<h3 class="wp-block-heading">17. Don’t do it!</h3>
+
+
+
+<p>If after all of this, you’re still procrastinating, consider not doing the task at all. Perhaps it’s just not right for you.&nbsp;</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" src="https://thecreativelife.net/wp-content/uploads/2020/01/will-porada-ZaGcU6BxJEc-unsplash-1024x683.jpg" alt="End procrastination by not doing the task at all" class="wp-image-3164"/><figcaption class="wp-element-caption">Stop procrastinating– by stopping completely. Photo by Will Porada on Unsplash</figcaption></figure></div>
+
+
+<p>We don’t all have to be size 10, and super-fit. We don’t all have to write books, make art, or speak several languages. You are not a failure if you don’t have your own business, a home worthy of interior magazines, or whatever else it is you’re procrastinating about.&nbsp;</p>
+
+
+
+<p>Let it go, and learn to love what you have. Not what the world says you should want.  Find what brings you joy, and do more of that. Life is too short for anything else.&nbsp;</p>
+
+
+
+<div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-css-opacity"/>
+
+
+
+<p><em>If you found this post helpful, you might like </em>The Creative Companion,<em> my bi-weekly newsletter for creatives, full of tips, resources and insights into the creative life from me, and from our growing community.</em><a href="https://landing.mailerlite.com/webforms/landing/h6i0i3"> Click here to get it sent to directly you. </a></p>
+
+
+
+<p><em>The book links above take you to Amazon, and if you buy there,  I get a tiny payment to help with the running of this site. If you prefer to support your local bookshop, more power to you!</em></p>
+<div class="addtoany_share_save_container addtoany_content addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-url="https://thecreativelife.net/stop-procrastinating/" data-a2a-title="Stop procrastinating now: 17 strategies to get you back in action"><a class="a2a_button_facebook" href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fthecreativelife.net%2Fstop-procrastinating%2F&amp;linkname=Stop%20procrastinating%20now%3A%2017%20strategies%20to%20get%20you%20back%20in%20action" title="Facebook" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_twitter" href="https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fthecreativelife.net%2Fstop-procrastinating%2F&amp;linkname=Stop%20procrastinating%20now%3A%2017%20strategies%20to%20get%20you%20back%20in%20action" title="Twitter" rel="nofollow noopener" target="_blank"></a><a class="a2a_button_email" href="https://www.addtoany.com/add_to/email?linkurl=https%3A%2F%2Fthecreativelife.net%2Fstop-procrastinating%2F&amp;linkname=Stop%20procrastinating%20now%3A%2017%20strategies%20to%20get%20you%20back%20in%20action" title="Email" rel="nofollow noopener" target="_blank"></a><a class="a2a_dd addtoany_share_save addtoany_share" href="https://www.addtoany.com/share"></a></div></div></div><div class="entry-meta entry-meta-after-content"><span class="entry-terms entry-terms-category">Category: <a href="https://thecreativelife.net/category/creative-blocks/" rel="tag">Creative blocks</a>, <a href="https://thecreativelife.net/category/popular/" rel="tag">Popular posts</a></span><span class="entry-terms entry-terms-post_tag">Tag: <a href="https://thecreativelife.net/tag/procrastination/" rel="tag">procrastination</a>, <a href="https://thecreativelife.net/tag/productivity/" rel="tag">productivity</a></span></div></div><div class="after-entry template-part">
+<h4 class="wp-block-heading" id="related-posts">Related Posts</h4>
+
+
+<div class="mai-grid entries entries-grid has-boxed has-image-center" style="--entry-title-font-size:var(--font-size-lg);--align-text:center;--entry-meta-text-align:center;"><div class="entries-wrap has-columns" style="--columns-xs:1/1;--columns-sm:1/2;--columns-md:1/4;--columns-lg:1/4;--flex-xs:0 0 var(--flex-basis);--flex-sm:0 0 var(--flex-basis);--flex-md:0 0 var(--flex-basis);--flex-lg:0 0 var(--flex-basis);--column-gap:var(--spacing-lg);--row-gap:var(--spacing-lg);--align-columns:center;"><article class="entry entry-grid is-column has-entry-link has-image has-image-first type-post category-creative-blocks category-creative-process tag-productivity" style="--entry-index:1;" aria-label="Why you should go down that rabbit hole"><a class="entry-image-link" href="https://thecreativelife.net/go-down-that-rabbit-hole/" tabindex="-1" aria-hidden="true"><img width="400" height="300" src="https://thecreativelife.net/wp-content/uploads/2024/04/Screenshot-2024-04-24-at-09.07.26-400x300.png" class="entry-image size-landscape-sm" alt="Why you should go down that rabbit hole" decoding="async" /></a><div class="entry-wrap entry-wrap-grid"><h3 class="entry-title"><a class="entry-title-link" href="https://thecreativelife.net/go-down-that-rabbit-hole/" rel="bookmark">Why you should go down that rabbit hole</a></h3>
+<div class="entry-excerpt"><p>Curiosity killed the cat. But it makes creatives better. </p>
+</div></div></article><article class="entry entry-grid is-column has-entry-link has-image has-image-first type-post category-creative-blocks" style="--entry-index:2;" aria-label="The siren song of distraction (and how to fight it)"><a class="entry-image-link" href="https://thecreativelife.net/distraction/" tabindex="-1" aria-hidden="true"><img width="400" height="300" src="https://thecreativelife.net/wp-content/uploads/2024/02/Nubelson-Fernandes-Unsplash-400x300.jpg" class="entry-image size-landscape-sm" alt="The siren song of distraction (and how to fight it)" decoding="async" loading="lazy" srcset="https://thecreativelife.net/wp-content/uploads/2024/02/Nubelson-Fernandes-Unsplash-400x300.jpg 400w, https://thecreativelife.net/wp-content/uploads/2024/02/Nubelson-Fernandes-Unsplash-800x600.jpg 800w, https://thecreativelife.net/wp-content/uploads/2024/02/Nubelson-Fernandes-Unsplash-1200x900.jpg 1200w" sizes="(max-width:599px) 599px, (min-width:600px) and (max-width: 799px) 399.5px, (min-width:800px) and (max-width: 999px) 249.75px, (min-width:1000px) 300px" /></a><div class="entry-wrap entry-wrap-grid"><h3 class="entry-title"><a class="entry-title-link" href="https://thecreativelife.net/distraction/" rel="bookmark">The siren song of distraction (and how to fight it)</a></h3>
+<div class="entry-excerpt"><p>When the going gets tough, the distractions start coming. And with creative work, there are always tough bits. Not matter how much we kid ourselves that the next one will be easier. </p>
+</div></div></article><article class="entry entry-grid is-column has-entry-link has-image has-image-first type-post category-creative-blocks category-creative-process tag-productivity-for-creatives" style="--entry-index:3;" aria-label="Eat that frog: why it&#8217;s good to do the hardest thing first"><a class="entry-image-link" href="https://thecreativelife.net/eat-that-frog/" tabindex="-1" aria-hidden="true"><img width="400" height="300" src="https://thecreativelife.net/wp-content/uploads/2020/05/shutterstock_88779508-400x300.jpg" class="entry-image size-landscape-sm" alt="Eatthat frog" decoding="async" loading="lazy" srcset="https://thecreativelife.net/wp-content/uploads/2020/05/shutterstock_88779508-260x195.jpg 260w, https://thecreativelife.net/wp-content/uploads/2020/05/shutterstock_88779508-350x263.jpg 350w, https://thecreativelife.net/wp-content/uploads/2020/05/shutterstock_88779508-400x300.jpg 400w, https://thecreativelife.net/wp-content/uploads/2020/05/shutterstock_88779508-550x413.jpg 550w, https://thecreativelife.net/wp-content/uploads/2020/05/shutterstock_88779508-800x600.jpg 800w" sizes="(max-width:599px) 599px, (min-width:600px) and (max-width: 799px) 399.5px, (min-width:800px) and (max-width: 999px) 249.75px, (min-width:1000px) 300px" /></a><div class="entry-wrap entry-wrap-grid"><h3 class="entry-title"><a class="entry-title-link" href="https://thecreativelife.net/eat-that-frog/" rel="bookmark">Eat that frog: why it&#8217;s good to do the hardest thing first</a></h3>
+<div class="entry-excerpt"><p>Do what you&#8217;re dreading, and everything else will feel easier</p>
+</div></div></article><article class="entry entry-grid is-column has-entry-link has-image has-image-first type-post category-creative-blocks tag-procrastination" style="--entry-index:4;" aria-label="How I stopped procrastinating and learned to love my tax return (sort of)"><a class="entry-image-link" href="https://thecreativelife.net/how-i-stopped-procrastinating/" tabindex="-1" aria-hidden="true"><img width="400" height="300" src="https://thecreativelife.net/wp-content/uploads/2023/10/USe-400x300.png" class="entry-image size-landscape-sm" alt="How I stopped procrastinating" decoding="async" loading="lazy" /></a><div class="entry-wrap entry-wrap-grid"><h3 class="entry-title"><a class="entry-title-link" href="https://thecreativelife.net/how-i-stopped-procrastinating/" rel="bookmark">How I stopped procrastinating and learned to love my tax return (sort of)</a></h3>
+<div class="entry-excerpt"><p>There are six triggers for procrastination. Change them, and you can learn to love any task. Or at least get it done. </p>
+</div></div></article></div></div></div></article><h2 class="screen-reader-text">Reader Interactions</h2><div class="entry-comments" id="comments"><h3>Comments</h3><ol class="comment-list">
+	<li class="comment byuser comment-author-sherylg1mac-com bypostauthor even thread-even depth-1" id="comment-2733">
+	<article id="article-comment-2733">
+
+		
+		<header class="comment-header">
+			<p class="comment-author">
+				<img alt='' src='https://secure.gravatar.com/avatar/7f69d50e2f59c2a95bfa219275bdd850?s=48&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/7f69d50e2f59c2a95bfa219275bdd850?s=96&#038;d=blank&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/><span class="comment-author-name">Sheryl Garratt</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://thecreativelife.net/stop-procrastinating/#comment-2733">1st June 2023 at 9:48 am</a></time></p>		</header>
+
+		<div class="comment-content">
+			
+			<p>Thanks Daryle. And what are you procrastinating on at the moment?</p>
+		</div>
+
+		
+		
+	</article>
+	</li><!-- #comment-## -->
+
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-2732">
+	<article id="article-comment-2732">
+
+		
+		<header class="comment-header">
+			<p class="comment-author">
+				<img alt='' src='https://secure.gravatar.com/avatar/63b6623632cd51cae12e29970749a4f6?s=48&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/63b6623632cd51cae12e29970749a4f6?s=96&#038;d=blank&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/><span class="comment-author-name">Daryle</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://thecreativelife.net/stop-procrastinating/#comment-2732">31st May 2023 at 11:21 pm</a></time></p>		</header>
+
+		<div class="comment-content">
+			
+			<p>The best &amp; most succinct list of anti-procrastination strategies I&#8217;ve seen!</p>
+		</div>
+
+		
+		
+	</article>
+	</li><!-- #comment-## -->
+
+	<li class="comment even thread-even depth-1" id="comment-1938">
+	<article id="article-comment-1938">
+
+		
+		<header class="comment-header">
+			<p class="comment-author">
+				<img alt='' src='https://secure.gravatar.com/avatar/063f1c56e9e3be1e6a208943d0326673?s=48&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/063f1c56e9e3be1e6a208943d0326673?s=96&#038;d=blank&#038;r=g 2x' class='avatar avatar-48 photo' height='48' width='48' loading='lazy' decoding='async'/><span class="comment-author-name">berihun</span>			</p>
+
+			<p class="comment-meta"><time class="comment-time"><a class="comment-time-link" href="https://thecreativelife.net/stop-procrastinating/#comment-1938">24th March 2022 at 7:12 am</a></time></p>		</header>
+
+		<div class="comment-content">
+			
+			<p>wow!!!!</p>
+		</div>
+
+		
+		
+	</article>
+	</li><!-- #comment-## -->
+</ol></div>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">What do you think?</h3><form action="https://thecreativelife.net/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='6224' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f0df8dd426" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="58"/><script type="rocketlazyloadscript">document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	</main></div></div><footer class="site-footer" id="site-footer">
+<div class="wp-block-group alignfull has-no-content-width has-no-margin-right has-no-margin-left"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading has-text-align-center has-white-color has-heading-background-color has-text-color has-background has-no-margin-bottom">Get The Creative Companion</h2>
+
+
+
+
+<div class="wp-block-columns has-white-color has-heading-background-color has-text-color has-background is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>A bi-weekly newsletter for professional creatives: actors, artists, designers, directors, makers, musicians, performers, photographers, writers any anyone else who earns a living from what they create (or aspires to). </p>
+
+
+
+<p>I talk about the challenges of the creative life, offer solutions that have worked for me and my coaching clients, and share resources, tips and links from our growing community of brilliant creatives.</p>
+
+
+
+<p>Creative work can often feel lonely. But it doesn&#8217;t have to be that way. Join us! </p>
+
+
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+                <div class="ml-form-embed" data-account="1521850:t8m6v0m0f4" data-form="5841529:t7x9v7">
+                </div>
+            
+</div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-group has-black-background-color has-background has-dark-background"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><nav class="nav-footer" style="--menu-justify-content:center;--menu-item-justify-content:center;" aria-label="Footer" itemscope itemtype="https://schema.org/SiteNavigationElement">
+<ul id="menu-footer" class="menu genesis-nav-menu my-footer-menu">
+<li class="menu-item menu-item-first"><a class="menu-item-link" href="https://thecreativelife.net/about/"><span>About me</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://thecreativelife.net/contact-me/"><span>Contact</span></a></li>
+<li class="menu-item"><a class="menu-item-link" rel="privacy-policy" href="https://thecreativelife.net/privacy-policy/"><span>Privacy Policy</span></a></li>
+<li class="menu-item menu-item-last"><a class="menu-item-link" href="https://thecreativelife.net/sitemap/"><span>Sitemap</span></a></li>
+</ul>
+</nav>
+
+
+
+<p class="has-white-color has-header-background-color has-text-color has-background"></p>
+</div></div>
+
+
+
+
+<div class="wp-block-group alignfull has-alt-color has-header-background-color has-text-color has-background has-dark-background has-xl-content-width has-xs-padding-top has-xs-padding-bottom has-no-margin-top has-no-margin-bottom"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+<div class="wp-block-columns are-vertically-aligned-center has-header-background-color has-background is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.3333%"><nav class="nav-social-links" style="--menu-justify-content:start;--menu-item-justify-content:start;" aria-label="Social Links" itemscope itemtype="https://schema.org/SiteNavigationElement">
+<ul id="menu-social-links" class="menu genesis-nav-menu">
+<li class="menu-item menu-item-first menu-item-icon"><a class="menu-item-link" href="https://www.facebook.com/thecreativelife.net/"><span><span class="mai-icon mai-icon-facebook-f" style="display:block;text-align:center;--icon-margin:0px 0px 0px 0px;--icon-padding:0px;--icon-size:1.5em;--icon-color:currentColor;--icon-border-radius:var(--border-radius);"><span class="mai-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512" width="240" height="240"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg></span></span></span></a></li>
+<li class="menu-item menu-item-icon"><a class="menu-item-link" href="https://www.instagram.com/sheryl.thecreativelife/"><span><span class="mai-icon mai-icon-instagram" style="display:block;text-align:center;--icon-margin:0px 0px 0px 0px;--icon-padding:0px;--icon-size:1.5em;--icon-color:currentColor;--icon-border-radius:var(--border-radius);"><span class="mai-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" width="240" height="240"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></span></span></span></a></li>
+<li class="menu-item menu-item-icon"><a class="menu-item-link" href="https://www.linkedin.com/in/sheryl-garratt/"><span><span class="mai-icon mai-icon-linkedin-in" style="display:block;text-align:center;--icon-margin:0px 0px 0px 0px;--icon-padding:0px;--icon-size:1.5em;--icon-color:currentColor;--icon-border-radius:var(--border-radius);"><span class="mai-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" width="240" height="240"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></span></span></span></a></li>
+<li class="menu-item menu-item-last menu-item-icon"><a class="menu-item-link" href="https://sherylgarratt.medium.com"><span><span class="mai-icon mai-icon-medium" style="display:block;text-align:center;--icon-margin:0px 0px 0px 0px;--icon-padding:0px;--icon-size:1.5em;--icon-color:currentColor;--icon-border-radius:var(--border-radius);"><span class="mai-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" width="240" height="240"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z"></path></svg></span></span></span></a></li>
+</ul>
+</nav>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<p class="has-text-align-right has-sm-font-size">Copyright © 2024 · The Creative Life · All Rights Reserved · site maintained by <a href="https://natehoffelder.com/">Nate Hoffelder</a></p>
+</div>
+</div>
+</div></div>
+
+
+
+</footer></div><style type="text/css" media="screen"></style>	<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link data-minify="1" rel='stylesheet' id='wc-blocks-style-css' href='https://thecreativelife.net/wp-content/cache/min/1/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=1714128237' type='text/css' media='all' />
+<link rel='stylesheet' id='mai-engine-footer-css' href='https://thecreativelife.net/wp-content/plugins/mai-engine/assets/css/footer.min.css?ver=2.34.1.42020240119' type='text/css' media='all' />
+<link rel='stylesheet' id='mai-inspire-css' href='https://thecreativelife.net/wp-content/themes/mai-inspire/style.css?ver=2.0.0.51620231408' type='text/css' media='all' />
+<style id='core-block-supports-inline-css' type='text/css'>
+.wp-container-core-columns-is-layout-1.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-2.wp-container-core-columns-is-layout-2{flex-wrap:nowrap;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=8.8.2" id="sourcebuster-js-js" defer></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra">
+/* <![CDATA[ */
+var wc_order_attribution = {"params":{"lifetime":1.0000000000000000818030539140313095458623138256371021270751953125e-5,"session":30,"ajaxurl":"https:\/\/thecreativelife.net\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=8.8.2" id="wc-order-attribution-js" defer></script>
+<script type="text/javascript" id="ppcp-smart-button-js-extra">
+/* <![CDATA[ */
+var PayPalCommerceGateway = {"url":"https:\/\/www.paypal.com\/sdk\/js?client-id=AZbPPx_kHMFxC9PtqUzlY1AjYVm0nDdXAMpyxocnz5HEzdFDJFkmPzlUNOBXJ-oaNOcL61ig13cYcZyI&currency=GBP&integration-date=2024-04-03&components=buttons,funding-eligibility&vault=false&commit=false&intent=capture&disable-funding=card&enable-funding=venmo,paylater","url_params":{"client-id":"AZbPPx_kHMFxC9PtqUzlY1AjYVm0nDdXAMpyxocnz5HEzdFDJFkmPzlUNOBXJ-oaNOcL61ig13cYcZyI","currency":"GBP","integration-date":"2024-04-03","components":"buttons,funding-eligibility","vault":"false","commit":"false","intent":"capture","disable-funding":"card","enable-funding":"venmo,paylater"},"script_attributes":{"data-partner-attribution-id":"Woo_PPCP"},"client_id":"AZbPPx_kHMFxC9PtqUzlY1AjYVm0nDdXAMpyxocnz5HEzdFDJFkmPzlUNOBXJ-oaNOcL61ig13cYcZyI","currency":"GBP","data_client_id":{"set_attribute":false,"endpoint":"\/?wc-ajax=ppc-data-client-id","nonce":"f3d7926bb1","user":0,"has_subscriptions":false,"paypal_subscriptions_enabled":false},"redirect":"https:\/\/thecreativelife.net\/checkout\/","context":"mini-cart","ajax":{"simulate_cart":{"endpoint":"\/?wc-ajax=ppc-simulate-cart","nonce":"fbf066e923"},"change_cart":{"endpoint":"\/?wc-ajax=ppc-change-cart","nonce":"167450539d"},"create_order":{"endpoint":"\/?wc-ajax=ppc-create-order","nonce":"e65ddc6140"},"approve_order":{"endpoint":"\/?wc-ajax=ppc-approve-order","nonce":"125ab6d340"},"approve_subscription":{"endpoint":"\/?wc-ajax=ppc-approve-subscription","nonce":"52a7eefbb5"},"vault_paypal":{"endpoint":"\/?wc-ajax=ppc-vault-paypal","nonce":"f34c7cd043"},"save_checkout_form":{"endpoint":"\/?wc-ajax=ppc-save-checkout-form","nonce":"23d96b01f2"},"validate_checkout":{"endpoint":"\/?wc-ajax=ppc-validate-checkout","nonce":"b026b133d3"},"cart_script_params":{"endpoint":"\/?wc-ajax=ppc-cart-script-params"}},"cart_contains_subscription":"","subscription_plan_id":"","variable_paypal_subscription_variations":[],"subscription_product_allowed":"","locations_with_subscription_product":{"product":false,"payorder":false,"cart":false},"enforce_vault":"","can_save_vault_token":"","is_free_trial_cart":"","vaulted_paypal_email":"","bn_codes":{"checkout":"Woo_PPCP","cart":"Woo_PPCP","mini-cart":"Woo_PPCP","product":"Woo_PPCP"},"payer":null,"button":{"wrapper":"#ppc-button-ppcp-gateway","is_disabled":false,"mini_cart_wrapper":"#ppc-button-minicart","is_mini_cart_disabled":false,"cancel_wrapper":"#ppcp-cancel","mini_cart_style":{"layout":"vertical","color":"gold","shape":"rect","label":"paypal","tagline":false,"height":35},"style":{"layout":"vertical","color":"gold","shape":"rect","label":"paypal","tagline":false}},"separate_buttons":{"card":{"id":"ppcp-card-button-gateway","wrapper":"#ppc-button-ppcp-card-button-gateway","style":{"shape":"rect","color":"black","layout":"horizontal"}}},"hosted_fields":{"wrapper":"#ppcp-hosted-fields","labels":{"credit_card_number":"","cvv":"","mm_yy":"MM\/YY","fields_empty":"Card payment details are missing. Please fill in all required fields.","fields_not_valid":"Unfortunately, your credit card details are not valid.","card_not_supported":"Unfortunately, we do not support your credit card.","cardholder_name_required":"Cardholder's first and last name are required, please fill the checkout form required fields."},"valid_cards":["mastercard","visa","amex","american-express","master-card"],"contingency":"SCA_WHEN_REQUIRED"},"messages":[],"labels":{"error":{"generic":"Something went wrong. Please try again or choose another payment source.","required":{"generic":"Required form fields are not filled.","field":"%s is a required field.","elements":{"terms":"Please read and accept the terms and conditions to proceed with your order."}}},"billing_field":"Billing %s","shipping_field":"Shipping %s"},"simulate_cart":{"enabled":true,"throttling":5000},"order_id":"0","single_product_buttons_enabled":"1","mini_cart_buttons_enabled":"1","basic_checkout_validation_enabled":"","early_checkout_validation_enabled":"1","funding_sources_without_redirect":["paypal","paylater","venmo","card"],"user":{"is_logged":false}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/cache/min/1/wp-content/plugins/woocommerce-paypal-payments/modules/ppcp-button/assets/js/button.js?ver=1714128238" id="ppcp-smart-button-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/contact-me\/|\/work-with-me\/lets-connect\/|\/work-with-me\/lets-talk\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/checkout\/??(.*)|\/basket\/?|\/my-account\/??(.*)|\/wc-api\/v(.*)|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/thecreativelife.net","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/themes/genesis/lib/js/skip-links.min.js?ver=3.5.0" id="skip-links-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" defer data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/cache/min/1/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1714128400" id="akismet-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/plugins/mai-engine/assets/js/min/global.min.js?ver=2.34.1.42020240119" id="mai-engine-global-js" async="async"></script>
+
+<script type="text/javascript" id="mai-engine-menus-js-extra">
+/* <![CDATA[ */
+var maiMenuVars = {"ariaLabel":"Mobile Menu","subMenuToggle":"Sub Menu","disableMicroData":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://thecreativelife.net/wp-content/plugins/mai-engine/assets/js/min/menus.min.js?ver=2.34.1.42020240119" id="mai-engine-menus-js" async="async"></script>
+
+<script>window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://thecreativelife.net/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360">',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script></body></html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1714320820 -->
