@@ -1,15 +1,25 @@
 * {
-    background-color: black;
     color: aliceblue;
-    opacity: 0.9;
     font-family: "Oswald", sans-serif;
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 1px;
 }
 
+body{
+  background-color: #000;
+}
+
 header {
 
+}
+
+footer {
+  background-color: #444;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
 }
 
 h1 {
@@ -35,6 +45,10 @@ h4 {
     text-align: right;
 }
 
+a{
+  text-decoration: none;
+}
+
 p.main-head {
     color: white;
     padding-top: 2.5%;
@@ -57,6 +71,12 @@ p.testchecklist {
   padding-left: 5%;
   padding-right: 5%;
 }
+p.pomodoro1 {
+  padding: 1% 5%;
+}
+ul.pomodoro1 {
+  padding: 1% 10%;
+}
 
 .images {
 
@@ -67,6 +87,26 @@ p.testchecklist {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.images#thinkingmodes{
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.images#pomodoro {
+  max-width: 640px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+#caption1 {
+  padding: 1%;
 }
 
 .chunking {
@@ -81,6 +121,20 @@ p.testchecklist {
   text-align: center;
 }
 
+#icons{
+  padding: 5px;
+}
+
+#footersmall {
+  font-size: 0.7rem;
+}
+
+.links {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
 /* Style the navigation bar */
 .navbar {
     width: 100%;
@@ -131,6 +185,7 @@ p.testchecklist {
 	border-top: 5px solid #e77422;
 	border-bottom: 5px solid #e77422;
   padding: 0px 20px;
+  margin-bottom: 20px;
 }
 
 .todo {
