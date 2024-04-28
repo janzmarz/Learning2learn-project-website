@@ -10,10 +10,6 @@ body{
   background-color: #000;
 }
 
-header {
-
-}
-
 footer {
   background-color: #444;
   padding: 10px;
@@ -85,10 +81,6 @@ p.procrastination {
 }
 p.final {
   font-size: 2rem;
-}
-
-.images {
-
 }
 
 .images#learn2learn {
